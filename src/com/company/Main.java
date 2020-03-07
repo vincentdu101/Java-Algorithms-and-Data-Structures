@@ -1,15 +1,19 @@
 package com.company;
 
-import com.company.LinkedLists.LinkedListExamples;
 import com.company.LinkedLists.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList entries = LinkedListExamples.buildLinkedList(new int[]{0, 1, 2, 3, 4});
 
-        LinkedListExamples.traverseLinkedList(entries);
+        LinkedList linkedList = new LinkedList();
 
+        linkedList.addAtHead(3);
+        linkedList.addAtHead(2);
+
+        System.out.println("Index 1 value is: " + linkedList.get(1));
+
+        linkedList.traverseList();
     }
 }
