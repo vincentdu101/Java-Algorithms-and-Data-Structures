@@ -70,7 +70,24 @@ public class LinkedList {
             node = new Node(val);
         } else {
 
-//            Node output =
+            // initialize by reference, share the same memory space and values
+            Node output = node;
+
+            // while we have more nodes
+            while (output != null) {
+
+                // check to see if this is the last node
+                if (output.getNext() == null) {
+
+                    // if it is add the new node, this updates the original
+                    // referenced node
+                    output.setNext(new Node(val));
+                    return;
+                }
+
+                // otherwise load the next node, this does not affect the original node
+                output = output.getNext();
+            }
 
         }
 
@@ -81,10 +98,66 @@ public class LinkedList {
      * than the length, the node will not be inserted. */
     public void addAtIndex(int index, int val) {
 
+        if (index == 0) {
+            addAtHead(val);
+        } else {
+
+            // use counter to match the index on when to add
+            int count = 0;
+
+            // initialize by reference
+            Node output = node;
+
+            // loop while we have not reached the index and we have more nodes
+            while (count <= index && output != null) {
+                // count first so we can see the next node
+                count++;
+
+                // if we match add the new node
+                if (count == index) {
+                    // create temp holder for new node
+                    Node temp = new Node(val);
+
+                    // set the node's original next node to it as next
+                    temp.setNext(output.getNext());
+
+                    // save temp to node's next
+                    output.setNext(temp);
+                    return;
+                }
+
+                output = output.getNext();
+            }
+
+        }
+
     }
 
     /** Delete the index-th node in the linked list, if the index is valid. */
     public void deleteAtIndex(int index) {
+
+        if (node == null) {
+            return;
+        }
+
+        if (index == 0 && node.getNext() != null) {
+            node = node.getNext();
+        } else {
+
+            Node output = node;
+            int count = 0;
+
+            while (count <= index && node != null) {
+
+                count++;
+                if (count == index) {
+                    Node temp = output.getNext().getNext();
+                    output.setNext(temp);
+                }
+
+            }
+
+        }
 
     }
 
