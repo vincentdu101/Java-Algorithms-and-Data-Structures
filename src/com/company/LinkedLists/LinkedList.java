@@ -136,10 +136,13 @@ public class LinkedList {
     /** Delete the index-th node in the linked list, if the index is valid. */
     public void deleteAtIndex(int index) {
 
+        // if null there are no nodes to delete
         if (node == null) {
             return;
         }
 
+        // if we are deleting the head node then make the next node the new
+        // head
         if (index == 0 && node.getNext() != null) {
             node = node.getNext();
         } else {
@@ -147,9 +150,15 @@ public class LinkedList {
             Node output = node;
             int count = 0;
 
+            // otherwise keep looping until we find the node we want to delete
             while (count <= index && node != null) {
 
+                // count first so we look for the next node to match the
+                // index
                 count++;
+
+                // if we find the node, set the next next node as the new
+                // next node
                 if (count == index) {
                     Node temp = output.getNext().getNext();
                     output.setNext(temp);

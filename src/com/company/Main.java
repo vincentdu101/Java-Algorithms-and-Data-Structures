@@ -1,11 +1,19 @@
 package com.company;
 
+import com.company.BinarySearchTree.TreeNode;
+import com.company.BinarySearchTree.ValidateTree;
 import com.company.LinkedLists.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        showLinkedListExamples();
+        showBinarySearchTreeExamples();
+
+    }
+
+    private static void showLinkedListExamples() {
         LinkedList linkedList = new LinkedList();
 
         linkedList.addAtHead(3);
@@ -17,6 +25,22 @@ public class Main {
         System.out.println("Index 1 value is: " + linkedList.get(1));
 
         linkedList.traverseList();
+    }
+
+    private static void showBinarySearchTreeExamples() {
+
+        // valid tree
+        TreeNode tree = new TreeNode(2);
+        tree.left = new TreeNode(1);
+        tree.right = new TreeNode(3);
+        System.out.println("Is tree a valid binary search tree: " + ValidateTree.isValidBST(tree));
+
+
+        // invalid tree
+        TreeNode invalidTree = new TreeNode(2);
+        invalidTree.left = new TreeNode(4);
+        invalidTree.right = new TreeNode(3);
+        System.out.println("Is tree a valid binary search tree: " + ValidateTree.isValidBST(invalidTree));
 
     }
 
