@@ -6,7 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         LinkedList linkedList = new LinkedList();
 
         linkedList.addAtHead(3);
@@ -17,3 +16,8 @@ public class Main {
 
         System.out.println("Index 1 value is: " + linkedList.get(1));
 
+        linkedList.traverseList();
+
+    }
+
+}
