@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685f3afb-df9a-4b1e-a1e1-4735a7d401a5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/BinarySearchTree/SearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/BinarySearchTree/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/BinarySearchTree/ValidateTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/BinarySearchTree/BSTIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java Algorithms and Data Structures/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java Algorithms and Data Structures/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,69 +15,89 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/TreeNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#144#145#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidateTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/ValidateTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/SearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-127">
-              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="249">
+                  <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2265">
+                  <caret line="151" selection-start-line="151" selection-end-line="151" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/Node.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/TreeNode.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BSTIterator.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/BSTIterator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#355#356#0" expanded="true" />
+                    <element signature="e#390#391#0" expanded="true" />
+                    <element signature="e#701#702#0" expanded="true" />
+                    <element signature="e#740#741#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ValidateTree.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/ValidateTree.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SearchTree.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/SearchTree.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,16 +116,17 @@
         <option value="$PROJECT_DIR$/src/com/company/LinkedLists/LinkedListExamples.java" />
         <option value="$PROJECT_DIR$/src/com/company/LinkedLists/Node.java" />
         <option value="$PROJECT_DIR$/src/com/company/BinarySearchTree/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/company/BinarySearchTree/ValidateTree.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/BinarySearchTree/BSTIterator.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="826" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="726" />
+    <option name="width" value="714" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -119,8 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -156,6 +171,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,7 +218,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="826" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -217,12 +234,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18958333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39893618" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39893618" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -231,6 +248,34 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -241,6 +286,51 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/ValidateTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/SearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -315,13 +405,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="2265">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/ValidateTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -332,27 +433,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/LinkedLists/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/ValidateTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="249">
+          <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
           <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BinarySearchTree/BSTIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
           </folding>
         </state>
       </provider>

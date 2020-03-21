@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.BinarySearchTree.BSTIterator;
 import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
 import com.company.LinkedLists.LinkedList;
@@ -35,12 +36,16 @@ public class Main {
         tree.right = new TreeNode(3);
         System.out.println("Is tree a valid binary search tree: " + ValidateTree.isValidBST(tree));
 
-
         // invalid tree
         TreeNode invalidTree = new TreeNode(2);
         invalidTree.left = new TreeNode(4);
         invalidTree.right = new TreeNode(3);
         System.out.println("Is tree a valid binary search tree: " + ValidateTree.isValidBST(invalidTree));
+
+        // iterator
+        BSTIterator iterator = new BSTIterator(tree);
+        System.out.println("Next Node Value is: " + iterator.next());
+        System.out.println("Iterator still has next node: " + iterator.hasNext());
 
     }
 
