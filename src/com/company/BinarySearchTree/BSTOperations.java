@@ -1,6 +1,6 @@
 package com.company.BinarySearchTree;
 
-public class SearchTree {
+public class BSTOperations {
 
     public static TreeNode searchBST(TreeNode root, int val) {
         // if the root is empty just return null
@@ -29,6 +29,32 @@ public class SearchTree {
         // if we still can't find a match at this point just return
         // null
         return null;
+    }
+
+    public static TreeNode insertIntoBST(TreeNode root, int val) {
+
+        // if the root is empty, make a new TreeNode and return it
+        if (root == null) {
+            root = new TreeNode(val);
+            return root;
+        }
+
+        // see if the value we want to add is smaller or
+        // bigger than the root
+
+        // if smaller add to the left side, if larger add
+        // it to the right
+
+        // recursively go into each side until we reach the end
+        // before adding
+        if (root.val > val) {
+            root.left = insertIntoBST(root.left, val);
+        } else if (root.val < val) {
+            root.right = insertIntoBST(root.right, val);
+        }
+
+        // return the root node with the new addition
+        return root;
     }
 
 }
