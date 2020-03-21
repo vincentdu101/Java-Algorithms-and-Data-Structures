@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.BinarySearchTree.BSTIterator;
+import com.company.BinarySearchTree.SearchTree;
 import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
 import com.company.LinkedLists.LinkedList;
@@ -47,6 +48,8 @@ public class Main {
         System.out.println("Next Node Value is: " + iterator.next());
         System.out.println("Iterator still has next node: " + iterator.hasNext());
 
+        // search for node val
+        System.out.println("Node search for 3: " + SearchTree.searchBST(tree, 3).val);
     }
 
 }
