@@ -5,6 +5,7 @@ import com.company.BinarySearchTree.BSTOperations;
 import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
 import com.company.LinkedLists.LinkedList;
+import com.company.Queue.MovingAverage;
 
 public class Main {
 
@@ -12,7 +13,7 @@ public class Main {
 
         showLinkedListExamples();
         showBinarySearchTreeExamples();
-
+        showQueueExamples();
     }
 
     private static void showLinkedListExamples() {
@@ -54,6 +55,15 @@ public class Main {
         // insert into BST
         BSTOperations.insertIntoBST(tree, 5);
         System.out.println("Node search after insert for 5: " + BSTOperations.searchBST(tree, 5).val);
+    }
+
+    private static void showQueueExamples() {
+        // moving average
+        MovingAverage m = new MovingAverage(3);
+        System.out.println("The average should be 1.00000: " + m.next(1));
+        System.out.println("The average should be 5.50000: " + m.next(10));
+        System.out.println("The average should be 4.66667: " + m.next(3));
+        System.out.println("The average should be 6.00000: " + m.next(5));
     }
 
 }
