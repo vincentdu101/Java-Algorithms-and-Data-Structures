@@ -24,7 +24,7 @@ public class MovingAverage {
     }
 
     public double next(int val) {
-        // notice how we do remove the element for a queue, but we
+        // notice how we don't actually remove the element for a queue, but we
         // just add the start of the list further along and we
         // don't actually remove anything
         if (size < data.size() + 1) {
