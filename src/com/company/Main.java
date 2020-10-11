@@ -6,6 +6,12 @@ import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
 import com.company.LinkedLists.LinkedList;
 import com.company.Queue.MovingAverage;
+import com.company.Sorting.BubbleSort;
+import com.company.Sorting.MergeSort;
+import com.company.Sorting.QuickSort;
+import com.company.Sorting.SelectionSort;
+
+import java.util.Queue;
 
 public class Main {
 
@@ -14,6 +20,7 @@ public class Main {
         showLinkedListExamples();
         showBinarySearchTreeExamples();
         showQueueExamples();
+        showSortingExamples();
     }
 
     private static void showLinkedListExamples() {
@@ -64,6 +71,31 @@ public class Main {
         System.out.println("The average should be 5.50000: " + m.next(10));
         System.out.println("The average should be 4.66667: " + m.next(3));
         System.out.println("The average should be 6.00000: " + m.next(5));
+    }
+
+    private static void showSortingExamples() {
+        int[] input = new int[]{4, 2, 1, 567, 3, 8, 1};
+
+        System.out.println("Selection Sort");
+        SelectionSort selectionSort = new SelectionSort(input.clone());
+        selectionSort.sortArray();
+        selectionSort.printArray();
+
+        System.out.println("Bubble Sort");
+        BubbleSort bubbleSort = new BubbleSort(input.clone());
+        bubbleSort.sortArray();
+        bubbleSort.printArray();
+
+        System.out.println("Merge Sort");
+        MergeSort mergeSort = new MergeSort(input.clone());
+        mergeSort.sortArray();
+        mergeSort.printArray();
+
+        System.out.println("Quick Sort");
+        QuickSort quickSort = new QuickSort(input.clone());
+        quickSort.sortArray();
+        quickSort.printArray();
+
     }
 
 }
