@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Arrays.MaxProfit;
 import com.company.BinarySearchTree.BSTIterator;
 import com.company.BinarySearchTree.BSTOperations;
 import com.company.BinarySearchTree.TreeNode;
@@ -11,6 +12,7 @@ import com.company.Sorting.MergeSort;
 import com.company.Sorting.QuickSort;
 import com.company.Sorting.SelectionSort;
 
+import java.util.List;
 import java.util.Queue;
 
 public class Main {
@@ -21,6 +23,8 @@ public class Main {
         showBinarySearchTreeExamples();
         showQueueExamples();
         showSortingExamples();
+        showGraphExamples();
+        showArrayExamples();
     }
 
     private static void showLinkedListExamples() {
@@ -96,6 +100,16 @@ public class Main {
         quickSort.sortArray();
         quickSort.printArray();
 
+    }
+
+    private static void showGraphExamples() {
+
+    }
+
+    private static void showArrayExamples() {
+        MaxProfit maxProfit = new MaxProfit();
+        int profit = maxProfit.maxProfit(new int[]{7,1,5,3,6,4});
+        System.out.println("Max Profit: " + profit);
     }
 
 }
