@@ -6,6 +6,8 @@ import com.company.BinarySearchTree.BSTOperations;
 import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
 import com.company.LinkedLists.LinkedList;
+import com.company.LinkedLists.LinkedListMediumProblems;
+import com.company.LinkedLists.ListNode;
 import com.company.Queue.MovingAverage;
 import com.company.Sorting.BubbleSort;
 import com.company.Sorting.MergeSort;
@@ -13,7 +15,6 @@ import com.company.Sorting.QuickSort;
 import com.company.Sorting.SelectionSort;
 
 import java.util.List;
-import java.util.Queue;
 
 public class Main {
 
@@ -39,6 +40,31 @@ public class Main {
         System.out.println("Index 1 value is: " + linkedList.get(1));
 
         linkedList.traverseList();
+
+        LinkedListMediumProblems mediumProblems = new LinkedListMediumProblems();
+        int[] input = new int[] {1, 2, 3, 4, 5};
+        ListNode inputList = createListNode(input);
+        ListNode output = mediumProblems.reverseBetween(inputList, 2, 4);
+        System.out.println("reverse linked list");
+        printListNode(output);
+    }
+
+    private static ListNode createListNode(int[] input) {
+        ListNode output = new ListNode();
+        ListNode ref = output;
+
+        for (int i = 0; i < input.length; i++) {
+            output.next = new ListNode(input[i]);
+            output = output.next;
+        }
+        return ref.next;
+    }
+
+    private static void printListNode(ListNode node) {
+        while (node != null) {
+            System.out.println(node.val);
+            node = node.next;
+        }
     }
 
     private static void showBinarySearchTreeExamples() {
