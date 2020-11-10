@@ -5,16 +5,12 @@ import com.company.BinarySearchTree.BSTIterator;
 import com.company.BinarySearchTree.BSTOperations;
 import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
-import com.company.LinkedLists.LinkedList;
-import com.company.LinkedLists.LinkedListMediumProblems;
-import com.company.LinkedLists.ListNode;
+import com.company.LinkedLists.*;
 import com.company.Queue.MovingAverage;
 import com.company.Sorting.BubbleSort;
 import com.company.Sorting.MergeSort;
 import com.company.Sorting.QuickSort;
 import com.company.Sorting.SelectionSort;
-
-import java.util.List;
 
 public class Main {
 
@@ -30,23 +26,32 @@ public class Main {
 
     private static void showLinkedListExamples() {
         LinkedList linkedList = new LinkedList();
-
         linkedList.addAtHead(3);
         linkedList.addAtHead(2);
         linkedList.addAtTail(4);
         linkedList.addAtIndex(3, 5);
         linkedList.deleteAtIndex(0);
-
         System.out.println("Index 1 value is: " + linkedList.get(1));
-
         linkedList.traverseList();
+
+        LinkedListEasyProblems easyProblems = new LinkedListEasyProblems();
+        int[] palindrome = new int[] {1, 2, 2, 1};
+        ListNode palindromeList = createListNode(palindrome);
+        boolean isPalindrome = easyProblems.isPalindrome(palindromeList);
+        System.out.println("Is Palindrome: " + isPalindrome);
 
         LinkedListMediumProblems mediumProblems = new LinkedListMediumProblems();
         int[] input = new int[] {1, 2, 3, 4, 5};
         ListNode inputList = createListNode(input);
         ListNode output = mediumProblems.reverseBetween(inputList, 2, 4);
-        System.out.println("reverse linked list");
+        System.out.println("reverse linked list in between values");
         printListNode(output);
+
+        ListNode reverseInput = createListNode(input);
+        ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+        ListNode outputReverse = reverseLinkedList.reverseList(reverseInput);
+        System.out.println("reverse linked list");
+        printListNode(outputReverse);
     }
 
     private static ListNode createListNode(int[] input) {
