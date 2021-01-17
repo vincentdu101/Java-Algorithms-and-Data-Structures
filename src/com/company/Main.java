@@ -1,6 +1,8 @@
 package com.company;
 
 import com.company.Arrays.MaxProfit;
+import com.company.Backtracking.GenerateParenthesis;
+import com.company.Backtracking.WordSearch;
 import com.company.BinarySearchTree.BSTIterator;
 import com.company.BinarySearchTree.BSTOperations;
 import com.company.BinarySearchTree.TreeNode;
@@ -12,6 +14,8 @@ import com.company.Sorting.MergeSort;
 import com.company.Sorting.QuickSort;
 import com.company.Sorting.SelectionSort;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,6 +26,7 @@ public class Main {
         showSortingExamples();
         showGraphExamples();
         showArrayExamples();
+        showBacktrackExamples();
     }
 
     private static void showLinkedListExamples() {
@@ -141,6 +146,22 @@ public class Main {
         MaxProfit maxProfit = new MaxProfit();
         int profit = maxProfit.maxProfit(new int[]{7,1,5,3,6,4});
         System.out.println("Max Profit: " + profit);
+    }
+
+    private static void showBacktrackExamples() {
+        List<String> output = GenerateParenthesis.generate(3);
+        output.forEach(out -> {
+            System.out.println(out);
+        });
+
+        char[][] board = new char[][]{
+                {'A','B','C','E'},
+                {'S','F','C','S'},
+                {'A','D','E','E'}
+        };
+        WordSearch wordSearch = new WordSearch(board);
+        String word = "ABCCED";
+        System.out.println(word + " Exists: " + wordSearch.exist(word));
     }
 
 }
