@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.Arrays.MaxProfit;
 import com.company.Backtracking.GenerateParenthesis;
+import com.company.Backtracking.PalindromePartitioning;
 import com.company.Backtracking.WordSearch;
 import com.company.BinarySearchTree.BSTIterator;
 import com.company.BinarySearchTree.BSTOperations;
@@ -13,8 +14,10 @@ import com.company.Sorting.BubbleSort;
 import com.company.Sorting.MergeSort;
 import com.company.Sorting.QuickSort;
 import com.company.Sorting.SelectionSort;
+import com.company.Stack.Problems;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -27,6 +30,7 @@ public class Main {
         showGraphExamples();
         showArrayExamples();
         showBacktrackExamples();
+        showStackExamples();
     }
 
     private static void showLinkedListExamples() {
@@ -142,6 +146,12 @@ public class Main {
 
     }
 
+    private static void showStackExamples() {
+        String input = "/a/./b/../../c/";
+        String output = Problems.simplifyPath(input);
+        System.out.println(input + " is " + output);
+    }
+
     private static void showArrayExamples() {
         MaxProfit maxProfit = new MaxProfit();
         int profit = maxProfit.maxProfit(new int[]{7,1,5,3,6,4});
@@ -162,6 +172,8 @@ public class Main {
         WordSearch wordSearch = new WordSearch(board);
         String word = "ABCCED";
         System.out.println(word + " Exists: " + wordSearch.exist(word));
+
+        PalindromePartitioning.partition("aab");
     }
 
 }
