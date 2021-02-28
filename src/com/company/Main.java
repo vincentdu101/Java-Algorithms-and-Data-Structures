@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.Arrays.MaxProfit;
 import com.company.Backtracking.GenerateParenthesis;
+import com.company.Backtracking.LetterCombinations;
 import com.company.Backtracking.PalindromePartitioning;
 import com.company.Backtracking.WordSearch;
 import com.company.BinarySearchTree.BSTIterator;
@@ -180,6 +181,12 @@ public class Main {
         System.out.println(word + " Exists: " + wordSearch.exist(word));
 
         PalindromePartitioning.partition("aab");
+
+        List<String> letters = LetterCombinations.generate("23");
+        System.out.println("Letter Combos for 23 are:");
+        for (String letter : letters) {
+            System.out.println(letter);
+        }
     }
 
 }
