@@ -36,7 +36,7 @@ public class LongestPalindrome {
      * s consist of only digits and English letters (lower-case and/or upper-case),
      */
 
-    public static String longestPalindrome(String s) {
+    public static String generate(String s) {
 
         // if empty string or just one character, then just
         // return it
@@ -73,7 +73,7 @@ public class LongestPalindrome {
         String letter = "";
 
         for (int i = index; i < s.length(); i++) {
-            letter += s.charAt(index);
+            letter += s.charAt(i);
             // if a word combination is a palindrome then we will add it
             // to the list, because the word is partially formed each time
             // we have to go the very end before we can completely cross

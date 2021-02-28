@@ -8,6 +8,7 @@ import com.company.BinarySearchTree.BSTIterator;
 import com.company.BinarySearchTree.BSTOperations;
 import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
+import com.company.DynamicProgramming.LongestPalindrome;
 import com.company.LinkedLists.*;
 import com.company.Queue.MovingAverage;
 import com.company.Sorting.BubbleSort;
@@ -31,6 +32,11 @@ public class Main {
         showArrayExamples();
         showBacktrackExamples();
         showStackExamples();
+        showDynamicProgrammingExamples();
+    }
+
+    private static void showDynamicProgrammingExamples() {
+        System.out.println("Longest Palindrome for 'babad' is " + LongestPalindrome.generate("babad"));
     }
 
     private static void showLinkedListExamples() {
