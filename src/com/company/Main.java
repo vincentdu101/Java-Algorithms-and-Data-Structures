@@ -7,8 +7,11 @@ import com.company.Backtracking.PalindromePartitioning;
 import com.company.Backtracking.WordSearch;
 import com.company.BinarySearchTree.BSTIterator;
 import com.company.BinarySearchTree.BSTOperations;
-import com.company.BinarySearchTree.TreeNode;
 import com.company.BinarySearchTree.ValidateTree;
+import com.company.BinaryTree.CreateTreeNode;
+import com.company.BinaryTree.FindTreeNode;
+import com.company.BinaryTree.LowestCommonAncestor;
+import com.company.BinaryTree.LowestCommonAncestorStack;
 import com.company.DynamicProgramming.LongestPalindrome;
 import com.company.LinkedLists.*;
 import com.company.Queue.MovingAverage;
@@ -17,9 +20,10 @@ import com.company.Sorting.MergeSort;
 import com.company.Sorting.QuickSort;
 import com.company.Sorting.SelectionSort;
 import com.company.Stack.Problems;
+import com.company.util.TreeNode;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Main {
 
@@ -34,6 +38,7 @@ public class Main {
         showBacktrackExamples();
         showStackExamples();
         showDynamicProgrammingExamples();
+        showBinaryTreeExamples();
     }
 
     private static void showDynamicProgrammingExamples() {
@@ -187,6 +192,29 @@ public class Main {
         for (String letter : letters) {
             System.out.println(letter);
         }
+    }
+
+    private static void showBinaryTreeExamples() {
+        LowestCommonAncestor ancestor = new LowestCommonAncestor();
+        LowestCommonAncestorStack ancestorStack = new LowestCommonAncestorStack();
+        List<Integer> nums = new ArrayList<>();
+        nums.add(3);
+        nums.add(5);
+        nums.add(1);
+        nums.add(6);
+        nums.add(2);
+        nums.add(0);
+        nums.add(8);
+        nums.add(7);
+        nums.add(4);
+        TreeNode combined = CreateTreeNode.create(nums);
+        TreeNode p = FindTreeNode.find(combined, 5);
+        TreeNode q = FindTreeNode.find(combined, 1);
+
+        TreeNode lowest = ancestor.recurseFind(combined, p, q);
+        TreeNode lowestStack = ancestorStack.find(combined, p, q);
+        System.out.println("Lowest Ancestor using Recurse Find is: " + lowest.val);
+        System.out.println("Lowest Ancestor using Stack Find is: " + lowestStack.val);
     }
 
 }

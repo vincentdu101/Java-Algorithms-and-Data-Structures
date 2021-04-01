@@ -1,5 +1,7 @@
 package com.company.BinarySearchTree;
 
+import com.company.util.TreeNode;
+
 public class ValidateTree {
 
 

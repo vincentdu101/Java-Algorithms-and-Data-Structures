@@ -1,5 +1,7 @@
 package com.company.BinarySearchTree;
 
+import com.company.util.TreeNode;
+
 public class BSTOperations {
 
     public static TreeNode searchBST(TreeNode root, int val) {
