@@ -30,7 +30,7 @@ import java.util.Map;
  */
 public class LetterCombinations {
 
-    static Map<String, String> phone = new HashMap<>() {{
+    static Map<String, String> phone = new HashMap<String, String>() {{
         put("2", "abc");
         put("3", "def");
         put("4", "ghi");

@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.Arrays.MaxProfit;
+import com.company.BFS.WallAndGates;
 import com.company.Backtracking.GenerateParenthesis;
 import com.company.Backtracking.LetterCombinations;
 import com.company.Backtracking.PalindromePartitioning;
@@ -12,6 +13,8 @@ import com.company.BinaryTree.CreateTreeNode;
 import com.company.BinaryTree.FindTreeNode;
 import com.company.BinaryTree.LowestCommonAncestor;
 import com.company.BinaryTree.LowestCommonAncestorStack;
+import com.company.DivideAndConquer.MaximumSubarray;
+import com.company.DynamicProgramming.DecodeWays;
 import com.company.DynamicProgramming.LongestPalindrome;
 import com.company.LinkedLists.*;
 import com.company.Queue.MovingAverage;
@@ -39,10 +42,35 @@ public class Main {
         showStackExamples();
         showDynamicProgrammingExamples();
         showBinaryTreeExamples();
+        showBFS();
+        showDivideAndConquerExamples();
+    }
+
+    private static void showDivideAndConquerExamples() {
+        int[] input = new int[] {5,4,-1,7,8};
+        System.out.println("Max Subarray of [5,4,-1,7,8] is: " + MaximumSubarray.maxSubArray(input));
     }
 
     private static void showDynamicProgrammingExamples() {
         System.out.println("Longest Palindrome for 'babad' is " + LongestPalindrome.generate("babad"));
+        System.out.println("Number of ways to decode 226: " + DecodeWays.numDecodings("226"));
+    }
+
+    private static void showBFS() {
+        int[][] rooms = {
+                {2147483647, -1, 0, 2147483647},
+                {2147483647, 2147483647, 2147483647, -1},
+                {2147483647, -1, 2147483647, -1},
+                {0, -1, 2147483647, 2147483647}
+        };
+        WallAndGates.wallsAndGates(rooms);
+
+        for (int[] row : rooms) {
+            for (int col : row) {
+                System.out.print(col + " ");
+            }
+            System.out.println("");
+        }
     }
 
     private static void showLinkedListExamples() {
